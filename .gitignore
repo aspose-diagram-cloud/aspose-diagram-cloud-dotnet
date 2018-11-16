@@ -186,3 +186,4 @@ $RECYCLE.BIN/
 /.swagger-codegen
 .swagger-codegen
 .vs
+/.swagger-codegen-ignore
