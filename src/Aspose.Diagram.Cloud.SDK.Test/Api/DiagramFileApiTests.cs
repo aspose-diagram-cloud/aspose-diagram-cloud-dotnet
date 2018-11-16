@@ -122,7 +122,7 @@ namespace Aspose.Diagram.Cloud.SDK.Test
             string name = "file_upload_new_C#.png";
             bool isOverwrite = true;
             string folder = TEMPFOLDER;
-            string localFilePath = @"D:\work\01aspose\cloud\Aspose.Diagram.Cloud\diagram\testdata\Diagram\upload\123.vsd";
+            string localFilePath = @"D:\xxxx\testdata\Diagram\upload\123.vsd";
             var response = instance.DiagramFilePutUpload(localFilePath, name, folder, isOverwrite);
             Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
 
