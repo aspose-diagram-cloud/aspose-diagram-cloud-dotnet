@@ -1,10 +1,10 @@
 # Aspose.Diagram.Cloud.SDK.Api.OAuthApi
 
-All URIs are relative to *https://api.aspose.cloud/v1.1/*
+All URIs are relative to *https://api-qa.aspose.cloud/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**OAuthPost**](OAuthApi.md#oauthpost) | **POST** /oauth2/token | Get Access token
+[**OAuthPost**](OAuthApi.md#oauthpost) | **POST** /connect/token | Get Access token
 
 
 <a name="oauthpost"></a>

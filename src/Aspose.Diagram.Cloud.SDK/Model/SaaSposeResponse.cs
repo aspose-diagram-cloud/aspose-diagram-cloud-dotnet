@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SaaSposeResponse.cs">
-//   Copyright (c) 2016 Aspose.Cells for Cloud
+//   Copyright (c) 2016 Aspose.Diagram for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,18 +40,6 @@ namespace Aspose.Diagram.Cloud.SDK.Model
   public class SaaSposeResponse 
   {                       
         /// <summary>
-        /// Gets or sets Status
-        /// </summary>  
-		[DataMember(Name="Status", EmitDefaultValue=false)]
-        public string Status { get; set; }
-
-        /// <summary>
-        /// Gets or sets Code
-        /// </summary>  
-		[DataMember(Name="Code", EmitDefaultValue=false)]
-        public int? Code { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -59,8 +47,6 @@ namespace Aspose.Diagram.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SaaSposeResponse {\n");
-          sb.Append("  Status: ").Append(this.Status).Append("\n");
-          sb.Append("  Code: ").Append(this.Code).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
