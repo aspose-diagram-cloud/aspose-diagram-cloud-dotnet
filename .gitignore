@@ -186,3 +186,11 @@ $RECYCLE.BIN/
 /.swagger-codegen
 /.vs
 /packages
+/docs
+docs
+docs
+build.sh
+git_push.sh
+mono_nunit_test.sh
+.swagger-codegen-ignore
+.travis.yml

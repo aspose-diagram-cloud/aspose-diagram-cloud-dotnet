@@ -65,7 +65,12 @@ OpenAPI spec version: 3.0
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="obj\**" />
+    <Compile Include="Api\DrawingTests.cs" />
+    <Compile Include="Api\PageTests.cs" />
+    <Compile Include="Api\ConvertTests.cs" />
+    <Compile Include="Api\OAuthApiTests.cs" />
+    <Compile Include="Api\StorageApiTests.cs" />
+    <Compile Include="Api\TestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

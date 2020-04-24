@@ -230,6 +230,374 @@ namespace Aspose.Diagram.Cloud.SDK.Api
         /// <param name="isOverwrite">If true overwrite the same name file.The default value is false  (optional, default to false)</param>
         /// <returns>Task of ApiResponse (SaveAsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SaveAsResponse>> SaveAsAsyncWithHttpInfo (string name, SaveOptionsRequest saveOptionsRequest, string folder = null, bool? isOverwrite = null);
+
+        /// <summary>
+        /// draw ellipse on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        ModifyResponse PutDrawEllipse(string name, string pageName, EllipseData ellipseData, string folder = null);
+
+        /// <summary>
+        /// draw ellipse on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        ApiResponse<ModifyResponse> PutDrawEllipseWithHttpInfo(string name, string pageName, EllipseData ellipseData, string folder = null);
+        /// <summary>
+        /// draw line on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        ModifyResponse PutDrawLine(string name, string pageName, LineData lineData, string folder = null);
+
+        /// <summary>
+        /// draw line on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        ApiResponse<ModifyResponse> PutDrawLineWithHttpInfo(string name, string pageName, LineData lineData, string folder = null);
+        /// <summary>
+        /// draw polyline on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        ModifyResponse PutDrawPolyline(string name, string pageName, PolylineData polylineData, string folder = null);
+
+        /// <summary>
+        /// draw polyline on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        ApiResponse<ModifyResponse> PutDrawPolylineWithHttpInfo(string name, string pageName, PolylineData polylineData, string folder = null);
+        #endregion Synchronous Operations
+        #region Asynchronous Operations
+        /// <summary>
+        /// draw ellipse on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        System.Threading.Tasks.Task<ModifyResponse> PutDrawEllipseAsync(string name, string pageName, EllipseData ellipseData, string folder = null);
+
+        /// <summary>
+        /// draw ellipse on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutDrawEllipseAsyncWithHttpInfo(string name, string pageName, EllipseData ellipseData, string folder = null);
+        /// <summary>
+        /// draw line on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        System.Threading.Tasks.Task<ModifyResponse> PutDrawLineAsync(string name, string pageName, LineData lineData, string folder = null);
+
+        /// <summary>
+        /// draw line on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutDrawLineAsyncWithHttpInfo(string name, string pageName, LineData lineData, string folder = null);
+        /// <summary>
+        /// draw polyline on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        System.Threading.Tasks.Task<ModifyResponse> PutDrawPolylineAsync(string name, string pageName, PolylineData polylineData, string folder = null);
+
+        /// <summary>
+        /// draw polyline on the page.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutDrawPolylineAsyncWithHttpInfo(string name, string pageName, PolylineData polylineData, string folder = null);
+
+        /// <summary>
+        /// Remove Page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        ModifyResponse DeletePage(string name, string pageName, string folder = null);
+
+        /// <summary>
+        /// Remove Page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        ApiResponse<ModifyResponse> DeletePageWithHttpInfo(string name, string pageName, string folder = null);
+        /// <summary>
+        /// Read pages info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponseOfListOfPageData</returns>
+        ApiResponseOfListOfPageData GetPages(string name, string folder = null);
+
+        /// <summary>
+        /// Read pages info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ApiResponseOfListOfPageData</returns>
+        ApiResponse<ApiResponseOfListOfPageData> GetPagesWithHttpInfo(string name, string folder = null);
+        /// <summary>
+        /// page setup
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        ModifyResponse PostPageSetup(string name, string pageName, PageSetting pageSetting, string folder = null);
+
+        /// <summary>
+        /// page setup
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        ApiResponse<ModifyResponse> PostPageSetupWithHttpInfo(string name, string pageName, PageSetting pageSetting, string folder = null);
+        /// <summary>
+        /// Add new empty page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        ModifyResponse PutNewPage(string name, string pageName, string folder = null);
+
+        /// <summary>
+        /// Add new empty page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        ApiResponse<ModifyResponse> PutNewPageWithHttpInfo(string name, string pageName, string folder = null);
+        #endregion Synchronous Operations
+        #region Asynchronous Operations
+        /// <summary>
+        /// Remove Page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        System.Threading.Tasks.Task<ModifyResponse> DeletePageAsync(string name, string pageName, string folder = null);
+
+        /// <summary>
+        /// Remove Page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> DeletePageAsyncWithHttpInfo(string name, string pageName, string folder = null);
+        /// <summary>
+        /// Read pages info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponseOfListOfPageData</returns>
+        System.Threading.Tasks.Task<ApiResponseOfListOfPageData> GetPagesAsync(string name, string folder = null);
+
+        /// <summary>
+        /// Read pages info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ApiResponseOfListOfPageData)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ApiResponseOfListOfPageData>> GetPagesAsyncWithHttpInfo(string name, string folder = null);
+        /// <summary>
+        /// page setup
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        System.Threading.Tasks.Task<ModifyResponse> PostPageSetupAsync(string name, string pageName, PageSetting pageSetting, string folder = null);
+
+        /// <summary>
+        /// page setup
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PostPageSetupAsyncWithHttpInfo(string name, string pageName, PageSetting pageSetting, string folder = null);
+        /// <summary>
+        /// Add new empty page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        System.Threading.Tasks.Task<ModifyResponse> PutNewPageAsync(string name, string pageName, string folder = null);
+
+        /// <summary>
+        /// Add new empty page
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutNewPageAsyncWithHttpInfo(string name, string pageName, string folder = null);
         #endregion Asynchronous Operations
     }
 
@@ -239,6 +607,7 @@ namespace Aspose.Diagram.Cloud.SDK.Api
     public partial class DiagramApi : IDiagramApi
     {
         private Aspose.Diagram.Cloud.SDK.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private readonly ApiClient apiClient = new ApiClient();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DiagramApi"/> class.
@@ -318,6 +687,12 @@ namespace Aspose.Diagram.Cloud.SDK.Api
             {
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
+        }
+
+        private DateTime? expireTime=null;
+
+        public void InterceptRequest() {
+
         }
 
         /// <summary>
@@ -1057,5 +1432,1251 @@ namespace Aspose.Diagram.Cloud.SDK.Api
                 (SaveAsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SaveAsResponse)));
         }
 
+        /// <summary>
+        /// Remove Page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse DeletePage(string name, string pageName, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = DeletePageWithHttpInfo(name, pageName, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Remove Page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> DeletePageWithHttpInfo(string name, string pageName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->DeletePage");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling PageApi->DeletePage");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeletePage", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// Remove Page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> DeletePageAsync(string name, string pageName, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await DeletePageAsyncWithHttpInfo(name, pageName, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Remove Page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for delete.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> DeletePageAsyncWithHttpInfo(string name, string pageName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->DeletePage");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling PageApi->DeletePage");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeletePage", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// Read pages info. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponseOfListOfPageData</returns>
+        public ApiResponseOfListOfPageData GetPages(string name, string folder = null)
+        {
+            ApiResponse<ApiResponseOfListOfPageData> localVarResponse = GetPagesWithHttpInfo(name, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Read pages info. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ApiResponseOfListOfPageData</returns>
+        public ApiResponse<ApiResponseOfListOfPageData> GetPagesWithHttpInfo(string name, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->GetPages");
+
+            var localVarPath = "/diagram/{name}/pages";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetPages", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ApiResponseOfListOfPageData>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ApiResponseOfListOfPageData)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ApiResponseOfListOfPageData)));
+        }
+
+        /// <summary>
+        /// Read pages info. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponseOfListOfPageData</returns>
+        public async System.Threading.Tasks.Task<ApiResponseOfListOfPageData> GetPagesAsync(string name, string folder = null)
+        {
+            ApiResponse<ApiResponseOfListOfPageData> localVarResponse = await GetPagesAsyncWithHttpInfo(name, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Read pages info. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ApiResponseOfListOfPageData)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ApiResponseOfListOfPageData>> GetPagesAsyncWithHttpInfo(string name, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->GetPages");
+
+            var localVarPath = "/diagram/{name}/pages";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetPages", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ApiResponseOfListOfPageData>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ApiResponseOfListOfPageData)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ApiResponseOfListOfPageData)));
+        }
+
+        /// <summary>
+        /// page setup 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse PostPageSetup(string name, string pageName, PageSetting pageSetting, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = PostPageSetupWithHttpInfo(name, pageName, pageSetting, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// page setup 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> PostPageSetupWithHttpInfo(string name, string pageName, PageSetting pageSetting, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->PostPageSetup");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling PageApi->PostPageSetup");
+            // verify the required parameter 'pageSetting' is set
+            if (pageSetting == null)
+                throw new ApiException(400, "Missing required parameter 'pageSetting' when calling PageApi->PostPageSetup");
+
+            var localVarPath = "/diagram/{name}/pages/PageSetup";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarQueryParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (pageSetting != null && pageSetting.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(pageSetting); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = pageSetting; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostPageSetup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// page setup 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> PostPageSetupAsync(string name, string pageName, PageSetting pageSetting, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await PostPageSetupAsyncWithHttpInfo(name, pageName, pageSetting, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// page setup 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">The page name for setting.</param>
+        /// <param name="pageSetting">Page setting info.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PostPageSetupAsyncWithHttpInfo(string name, string pageName, PageSetting pageSetting, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->PostPageSetup");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling PageApi->PostPageSetup");
+            // verify the required parameter 'pageSetting' is set
+            if (pageSetting == null)
+                throw new ApiException(400, "Missing required parameter 'pageSetting' when calling PageApi->PostPageSetup");
+
+            var localVarPath = "/diagram/{name}/pages/PageSetup";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarQueryParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (pageSetting != null && pageSetting.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(pageSetting); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = pageSetting; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostPageSetup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// Add new empty page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse PutNewPage(string name, string pageName, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = PutNewPageWithHttpInfo(name, pageName, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Add new empty page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> PutNewPageWithHttpInfo(string name, string pageName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->PutNewPage");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling PageApi->PutNewPage");
+
+            var localVarPath = "/diagram/{name}/pages/addNew";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarQueryParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutNewPage", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// Add new empty page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> PutNewPageAsync(string name, string pageName, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await PutNewPageAsyncWithHttpInfo(name, pageName, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Add new empty page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">New page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutNewPageAsyncWithHttpInfo(string name, string pageName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling PageApi->PutNewPage");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling PageApi->PutNewPage");
+
+            var localVarPath = "/diagram/{name}/pages/addNew";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarQueryParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutNewPage", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// draw ellipse on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse PutDrawEllipse(string name, string pageName, EllipseData ellipseData, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = PutDrawEllipseWithHttpInfo(name, pageName, ellipseData, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// draw ellipse on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> PutDrawEllipseWithHttpInfo(string name, string pageName, EllipseData ellipseData, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling DrawApi->PutDrawEllipse");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling DrawApi->PutDrawEllipse");
+            // verify the required parameter 'ellipseData' is set
+            if (ellipseData == null)
+                throw new ApiException(400, "Missing required parameter 'ellipseData' when calling DrawApi->PutDrawEllipse");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/drawEllipse";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (ellipseData != null && ellipseData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(ellipseData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = ellipseData; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutDrawEllipse", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// draw ellipse on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> PutDrawEllipseAsync(string name, string pageName, EllipseData ellipseData, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await PutDrawEllipseAsyncWithHttpInfo(name, pageName, ellipseData, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// draw ellipse on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="ellipseData">drawing ellipse data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutDrawEllipseAsyncWithHttpInfo(string name, string pageName, EllipseData ellipseData, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling DrawApi->PutDrawEllipse");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling DrawApi->PutDrawEllipse");
+            // verify the required parameter 'ellipseData' is set
+            if (ellipseData == null)
+                throw new ApiException(400, "Missing required parameter 'ellipseData' when calling DrawApi->PutDrawEllipse");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/drawEllipse";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (ellipseData != null && ellipseData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(ellipseData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = ellipseData; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutDrawEllipse", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// draw line on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse PutDrawLine(string name, string pageName, LineData lineData, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = PutDrawLineWithHttpInfo(name, pageName, lineData, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// draw line on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> PutDrawLineWithHttpInfo(string name, string pageName, LineData lineData, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling DrawApi->PutDrawLine");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling DrawApi->PutDrawLine");
+            // verify the required parameter 'lineData' is set
+            if (lineData == null)
+                throw new ApiException(400, "Missing required parameter 'lineData' when calling DrawApi->PutDrawLine");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/drawLine";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (lineData != null && lineData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(lineData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = lineData; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutDrawLine", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// draw line on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> PutDrawLineAsync(string name, string pageName, LineData lineData, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await PutDrawLineAsyncWithHttpInfo(name, pageName, lineData, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// draw line on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="lineData">drawing line data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutDrawLineAsyncWithHttpInfo(string name, string pageName, LineData lineData, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling DrawApi->PutDrawLine");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling DrawApi->PutDrawLine");
+            // verify the required parameter 'lineData' is set
+            if (lineData == null)
+                throw new ApiException(400, "Missing required parameter 'lineData' when calling DrawApi->PutDrawLine");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/drawLine";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (lineData != null && lineData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(lineData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = lineData; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutDrawLine", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// draw polyline on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse PutDrawPolyline(string name, string pageName, PolylineData polylineData, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = PutDrawPolylineWithHttpInfo(name, pageName, polylineData, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// draw polyline on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> PutDrawPolylineWithHttpInfo(string name, string pageName, PolylineData polylineData, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling DrawApi->PutDrawPolyline");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling DrawApi->PutDrawPolyline");
+            // verify the required parameter 'polylineData' is set
+            if (polylineData == null)
+                throw new ApiException(400, "Missing required parameter 'polylineData' when calling DrawApi->PutDrawPolyline");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/drawPolyline";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (polylineData != null && polylineData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(polylineData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = polylineData; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutDrawPolyline", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// draw polyline on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> PutDrawPolylineAsync(string name, string pageName, PolylineData polylineData, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await PutDrawPolylineAsyncWithHttpInfo(name, pageName, polylineData, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// draw polyline on the page. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="polylineData">drawing polyline data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> PutDrawPolylineAsyncWithHttpInfo(string name, string pageName, PolylineData polylineData, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling DrawApi->PutDrawPolyline");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling DrawApi->PutDrawPolyline");
+            // verify the required parameter 'polylineData' is set
+            if (polylineData == null)
+                throw new ApiException(400, "Missing required parameter 'polylineData' when calling DrawApi->PutDrawPolyline");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/drawPolyline";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (polylineData != null && polylineData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(polylineData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = polylineData; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PutDrawPolyline", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
     }
 }

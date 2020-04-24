@@ -45,6 +45,11 @@ namespace Aspose.Diagram.Cloud.SDK.Model
 		[DataMember(Name="IsEmpty", EmitDefaultValue=false)]
         public bool? IsEmpty { get; set; }
 
+        public PointF(double x, double y) {
+            this.X = x;
+            this.Y = y;
+        }
+
         /// <summary>
         /// Gets or sets X
         /// </summary>  

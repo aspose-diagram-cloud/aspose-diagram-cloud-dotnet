@@ -18,6 +18,7 @@ OpenAPI spec version: 3.0
     <AssemblyName>Aspose.Diagram.Cloud.SDK</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Copyright>MIT</Copyright>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,7 +55,61 @@ OpenAPI spec version: 3.0
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="obj\**" />
+    <Compile Include="Api\DiagramApi.cs" />
+    <Compile Include="Api\OAuthApi.cs" />
+    <Compile Include="Api\StorageApi.cs" />
+    <Compile Include="Client\ApiClient.cs" />
+    <Compile Include="Client\ApiException.cs" />
+    <Compile Include="Client\ApiResponse.cs" />
+    <Compile Include="Client\Configuration.cs" />
+    <Compile Include="Client\ExceptionFactory.cs" />
+    <Compile Include="Client\GlobalConfiguration.cs" />
+    <Compile Include="Client\IApiAccessor.cs" />
+    <Compile Include="Client\IReadableConfiguration.cs" />
+    <Compile Include="Client\SwaggerDateConverter.cs" />
+    <Compile Include="Model\AccessTokenResponse.cs" />
+    <Compile Include="Model\ApiResponseOfListOfPageData.cs" />
+    <Compile Include="Model\CreateNewResponse.cs" />
+    <Compile Include="Model\DiagramSaveOptions.cs" />
+    <Compile Include="Model\DiscUsage.cs" />
+    <Compile Include="Model\DrawShapeData.cs" />
+    <Compile Include="Model\EllipseData.cs" />
+    <Compile Include="Model\Error.cs" />
+    <Compile Include="Model\ErrorDetails.cs" />
+    <Compile Include="Model\FilesList.cs" />
+    <Compile Include="Model\FilesUploadResult.cs" />
+    <Compile Include="Model\FileVersion.cs" />
+    <Compile Include="Model\FileVersions.cs" />
+    <Compile Include="Model\HTMLSaveOptions.cs" />
+    <Compile Include="Model\ImageSaveOptions.cs" />
+    <Compile Include="Model\LineData.cs" />
+    <Compile Include="Model\ModifyResponse.cs" />
+    <Compile Include="Model\ObjectExist.cs" />
+    <Compile Include="Model\PageData.cs" />
+    <Compile Include="Model\PageSetting.cs" />
+    <Compile Include="Model\PageSize.cs" />
+    <Compile Include="Model\PdfDigitalSignatureDetails.cs" />
+    <Compile Include="Model\PdfEncryptionDetails.cs" />
+    <Compile Include="Model\PdfSaveOptions.cs" />
+    <Compile Include="Model\PointF.cs" />
+    <Compile Include="Model\PolylineData.cs" />
+    <Compile Include="Model\RectangleF.cs" />
+    <Compile Include="Model\RenderingSaveOptions.cs" />
+    <Compile Include="Model\SaaSposeResponse.cs" />
+    <Compile Include="Model\SaveAsResponse.cs" />
+    <Compile Include="Model\SaveOptionsModel.cs" />
+    <Compile Include="Model\SaveOptionsRequest.cs" />
+    <Compile Include="Model\ShapeData.cs" />
+    <Compile Include="Model\ShapeStyleData.cs" />
+    <Compile Include="Model\StorageExist.cs" />
+    <Compile Include="Model\StorageFile.cs" />
+    <Compile Include="Model\SVGSaveOptions.cs" />
+    <Compile Include="Model\SWFSaveOptions.cs" />
+    <Compile Include="Model\TextStyleData.cs" />
+    <Compile Include="Model\UploadResponse.cs" />
+    <Compile Include="Model\XAMLSaveOptions.cs" />
+    <Compile Include="Model\XPSSaveOptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
