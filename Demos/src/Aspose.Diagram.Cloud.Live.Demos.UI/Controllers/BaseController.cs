@@ -38,7 +38,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Controllers
 		/// <summary>
 		/// Main context object to access all the dcContent specific context info
 		/// </summary>
-		public AsposeDiagramCloudContext AsposeImagingCloudContext
+		public AsposeDiagramCloudContext AsposeDiagramCloudContext
 		{
 			get
 			{
@@ -56,7 +56,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Controllers
 		{
 			get
 			{
-				if (_resources == null) _resources = AsposeImagingCloudContext.Resources;
+				if (_resources == null) _resources = AsposeDiagramCloudContext.Resources;
 				return _resources;
 			}
 		}

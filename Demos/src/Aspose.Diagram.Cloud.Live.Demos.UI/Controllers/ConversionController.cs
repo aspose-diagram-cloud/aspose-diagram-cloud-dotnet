@@ -27,8 +27,8 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Controllers
 
 					if ((isFileUploaded != null) && (isFileUploaded.FileName.Trim() != ""))
 					{
-						AsposeDiagramConversion asposeImagingConversion = new AsposeDiagramConversion();
-							 response = asposeImagingConversion.Convert(isFileUploaded.FileName, isFileUploaded.FolderId,   outputType.ToLower().Replace(" ", ""));
+						AsposeDiagramConversion asposeDiagramConversion = new AsposeDiagramConversion();
+							 response = asposeDiagramConversion.Convert(isFileUploaded.FileName, isFileUploaded.FolderId,   outputType.ToLower().Replace(" ", ""));
 
 						if (response == null)
 						{

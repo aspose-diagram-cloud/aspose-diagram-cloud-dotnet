@@ -1,4 +1,4 @@
-using Aspose.Imaging.Cloud.Live.Demos.UI.Models;
+using Aspose.Diagram.Cloud.Live.Demos.UI.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,7 +14,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
         /// <summary>
         /// Main context object to access all the SybContent specific context info
         /// </summary>
-        public AsposeDiagramCloudContext AsposeImagingCloudContext
+        public AsposeDiagramCloudContext AsposeDiagramCloudContext
 		{
             get
             {
@@ -32,7 +32,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
 		{
 			get
 			{
-				if (_resources == null) _resources = AsposeImagingCloudContext.Resources;
+				if (_resources == null) _resources = AsposeDiagramCloudContext.Resources;
 				return _resources;
 			}
 		}
@@ -40,7 +40,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
 		protected override void OnLoad(EventArgs e)
         {
 			// Sync the central context store with the first loaded context for this page
-			AsposeDiagramCloudContext.atcc = AsposeImagingCloudContext;
+			AsposeDiagramCloudContext.atcc = AsposeDiagramCloudContext;
             base.OnLoad(e);
         }
     }

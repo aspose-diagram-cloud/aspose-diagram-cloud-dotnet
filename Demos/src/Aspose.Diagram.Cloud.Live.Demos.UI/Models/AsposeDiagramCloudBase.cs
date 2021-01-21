@@ -11,12 +11,11 @@ using Aspose.Storage.Cloud.Sdk.Api;
 namespace  Aspose.Diagram.Cloud.Live.Demos.UI.Models
 {
 	///<Summary>
-	/// AsposeImagingCloudBase class to have base methods
+	/// AsposeDiagramCloudBase class to have base methods
 	///</Summary>
 
 	public abstract class AsposeDiagramCloudBase : ApiController
     {
-		//protected ImagingApi imgApi = new ImagingApi(Config.Configuration.AppKey, Config.Configuration.AppSID);
 		protected StorageApi storageApi = new StorageApi(Config.Configuration.AppKey, Config.Configuration.AppSID);
 		///<Summary>
 		/// Get File extension

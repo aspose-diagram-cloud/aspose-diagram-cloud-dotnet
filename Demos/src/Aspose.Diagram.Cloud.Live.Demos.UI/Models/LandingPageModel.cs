@@ -16,7 +16,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Models
 		/// </summary>
 		public string Product { get; set; }
 		private AsposeDiagramCloudContext _atcContext;
-		public AsposeDiagramCloudContext AsposeHTMLCloudContext
+		public AsposeDiagramCloudContext AsposeDiagramCloudContext
 		{
 			get
 			{
@@ -29,7 +29,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Models
 		{
 			get
 			{
-				if (_resources == null) _resources = AsposeHTMLCloudContext.Resources;
+				if (_resources == null) _resources = AsposeDiagramCloudContext.Resources;
 				return _resources;
 			}
 			set

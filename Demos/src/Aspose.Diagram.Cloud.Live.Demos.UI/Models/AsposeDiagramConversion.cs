@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using System.IO;
 using System.Web.Http;
-using Aspose.Imaging.Cloud.Live.Demos.UI.Models;
+using Aspose.Diagram.Cloud.Live.Demos.UI.Models;
 using System.Diagnostics;
 using Newtonsoft.Json.Linq;
 using Aspose.Diagram.Cloud.SDK.Model;
@@ -11,7 +11,7 @@ using System;
 namespace Aspose.Diagram.Cloud.Live.Demos.UI.Models
 {
     ///<Summary>
-    /// Aspose.HTML Cloud API convert method to convert word document file to other format
+    /// Aspose.Diagram Cloud API convert method to convert word document file to other format
     ///</Summary>
 
     public class AsposeDiagramConversion : AsposeDiagramCloudBase

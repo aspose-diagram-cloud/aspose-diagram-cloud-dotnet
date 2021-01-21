@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Aspose.Imaging.Cloud.Live.Demos.UI.Models.Common
+namespace Aspose.Diagram.Cloud.Live.Demos.UI.Models.Common
 {
 	public class InputFile
 	{

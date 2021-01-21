@@ -1,4 +1,4 @@
-using Aspose.Imaging.Cloud.Live.Demos.UI.Models;
+using Aspose.Diagram.Cloud.Live.Demos.UI.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +18,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
         /// <summary>
         /// Main context object to access all the dcContent specific context info
         /// </summary>
-        public AsposeDiagramCloudContext AsposeImagingCloudContext
+        public AsposeDiagramCloudContext AsposeDiagramCloudContext
 		{
             get
             {
@@ -37,7 +37,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
 		{
 			get
 			{
-				if (_resources == null) _resources = AsposeImagingCloudContext.Resources;
+				if (_resources == null) _resources = AsposeDiagramCloudContext.Resources;
 				return _resources;
 			}
 		}
@@ -46,7 +46,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
             // Initialize our base class (System.Web,UI.Page) 
             base.OnInit(e);
             // Check to see if the Session is null (doesnt exist) 
-            if (AsposeImagingCloudContext.Session != null)
+            if (AsposeDiagramCloudContext.Session != null)
             {
                 // Check the IsNewSession value, this will tell us if the session has been reset. 
                 // IsNewSession will also let us know if the users session has timed out 
@@ -70,7 +70,7 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
         protected override void OnLoad(EventArgs e)
         {
             // Sync the central context store with the first loaded context for this page
-            AsposeDiagramCloudContext.atcc = AsposeImagingCloudContext;
+            AsposeDiagramCloudContext.atcc = AsposeDiagramCloudContext;
             base.OnLoad(e);
         }
     }

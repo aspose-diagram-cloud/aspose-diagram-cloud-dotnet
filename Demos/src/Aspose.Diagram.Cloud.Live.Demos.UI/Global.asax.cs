@@ -45,7 +45,12 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI
 		{
 			routes.RouteExistingFiles = true;
 			routes.Ignore("{resource}.axd/{*pathInfo}");
-					
+
+			routes.MapRoute(
+				name: "NoUrl",
+				url: "",
+				defaults: new { controller = "Home", action = "Default" }
+			);
 
 			routes.MapRoute(
 				name: "Default",

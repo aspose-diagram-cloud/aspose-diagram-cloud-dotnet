@@ -290,9 +290,6 @@ namespace Aspose.Diagram.Cloud.Live.Demos.UI.Config
 				{
 					dvAppProductSection.Visible = false;
 				}
-				
-				//Page.Title = hMainTitle.InnerText; // Resources["PerformOCR"];		
-
 			}
 		}
 		protected void ShowErrorMessage(HtmlGenericControl control, string message)
