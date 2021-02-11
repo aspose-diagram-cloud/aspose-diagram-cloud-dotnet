@@ -53,16 +53,17 @@ Simply execute `Install-Package Aspose.Diagram-Cloud` from the Package Manager C
 
 Please check the [GitHub Repository](https://github.com/aspose-diagram-cloud/aspose-diagram-cloud-dotnet) for other common usage scenarios.
 
-## Create a New VDX Format Diagram in the Cloud
+## Create New VDX Diagram in C# .Net
 
 ```csharp
-DiagramFileApi instance = new DiagramFileApi(GetConfiguration());
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+	var diagramApi = new DiagramApi("client_credentials", "MY_CLIENT_ID", "MY_CLIENT_SECRET");
 
-string name = "New_Diagram.vdx";
-bool isOverwrite = true;
-string folder = null;
+	string name = "New_Diagram.vdx";
+	bool isOverwrite = true;
+	string folder = null;
 
-var response = instance.DiagramFilePutCreate(name, folder, isOverwrite);
+	CreateNewResponse response = diagramApi.CreateNew(name, folder, isOverwrite);
 ```
 ## Aspose.Diagram Cloud SDKs in Popular Languages
 
