@@ -40,8 +40,9 @@ namespace Aspose.Diagram.Cloud.SDK.Model
   public class TextStyleData 
   {                       
         /// <summary>
-        /// Gets or Sets Style
+        /// Specifies the character formatting applied to a range of text in the shape&#39;s text block.             
         /// </summary>
+        /// <value>Specifies the character formatting applied to a range of text in the shape&#39;s text block.             </value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StyleEnum
         {
@@ -78,25 +79,25 @@ namespace Aspose.Diagram.Cloud.SDK.Model
         }
 
         /// <summary>
-        /// Gets or sets Style
+        /// Specifies the character formatting applied to a range of text in the shape&#39;s text block.             
         /// </summary>
 				
         public StyleEnum? Style { get; set; }
 
         /// <summary>
-        /// Gets or sets Color
+        /// Specifies the color of the text in the shape's text block.             
         /// </summary>  
 		[DataMember(Name="Color", EmitDefaultValue=false)]
         public string Color { get; set; }
 
         /// <summary>
-        /// Gets or sets FontName
+        /// It specified the font name of the font used to format the text             
         /// </summary>  
 		[DataMember(Name="FontName", EmitDefaultValue=false)]
         public string FontName { get; set; }
 
         /// <summary>
-        /// Gets or sets FontSize
+        /// Specifies the size of the text in the shape's text block.             
         /// </summary>  
 		[DataMember(Name="FontSize", EmitDefaultValue=false)]
         public double? FontSize { get; set; }

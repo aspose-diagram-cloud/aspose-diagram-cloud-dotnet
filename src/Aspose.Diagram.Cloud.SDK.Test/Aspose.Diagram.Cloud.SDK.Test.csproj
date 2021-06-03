@@ -67,6 +67,8 @@ OpenAPI spec version: 3.0
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\DrawingTests.cs" />
+    <Compile Include="Api\MasterTests.cs" />
+    <Compile Include="Api\ShapeTests.cs" />
     <Compile Include="Api\PageTests.cs" />
     <Compile Include="Api\ConvertTests.cs" />
     <Compile Include="Api\OAuthApiTests.cs" />
@@ -83,6 +85,9 @@ OpenAPI spec version: 3.0
       <Project>{96620D8A-93D7-4C7E-AE2D-B6ED71F10C2C}</Project>
       <Name>Aspose.Diagram.Cloud.SDK</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestData\" />
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

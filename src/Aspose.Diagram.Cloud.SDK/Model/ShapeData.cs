@@ -34,28 +34,70 @@ namespace Aspose.Diagram.Cloud.SDK.Model
   using Newtonsoft.Json.Converters;
 
   /// <summary>
-  /// 
+  /// Shape element.             
   /// </summary>  
   [DataContract]
   public class ShapeData 
   {                       
         /// <summary>
-        /// Gets or sets ID
+        /// The unique ID of the element within its parent element.             
         /// </summary>  
 		[DataMember(Name="ID", EmitDefaultValue=false)]
         public long? ID { get; set; }
 
         /// <summary>
-        /// Gets or sets PinX
+        /// The name of the element.             
+        /// </summary>  
+		[DataMember(Name="Name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Specifies the x-coordinate of the shape's pin (center of rotation) in relation to the origin of its parent.             
         /// </summary>  
 		[DataMember(Name="PinX", EmitDefaultValue=false)]
         public double? PinX { get; set; }
 
         /// <summary>
-        /// Gets or sets PinY
+        /// Specifies the y-coordinate of the shape's pin (center of rotation) in relation to the origin of its parent.             
         /// </summary>  
 		[DataMember(Name="PinY", EmitDefaultValue=false)]
         public double? PinY { get; set; }
+
+        /// <summary>
+        /// Contains the width of the associated shape in drawing units.             
+        /// </summary>  
+		[DataMember(Name="Width", EmitDefaultValue=false)]
+        public double? Width { get; set; }
+
+        /// <summary>
+        /// Specifies the height of the shape in drawing units.             
+        /// </summary>  
+		[DataMember(Name="Height", EmitDefaultValue=false)]
+        public double? Height { get; set; }
+
+        /// <summary>
+        /// Represents the shape's current angle of rotation in relation to its parent(deg,180~-180).             
+        /// </summary>  
+		[DataMember(Name="Angle", EmitDefaultValue=false)]
+        public double? Angle { get; set; }
+
+        /// <summary>
+        /// Contains the text of a shape.             
+        /// </summary>  
+		[DataMember(Name="Text", EmitDefaultValue=false)]
+        public string Text { get; set; }
+
+        /// <summary>
+        /// Style of shape element
+        /// </summary>  
+		[DataMember(Name="ShapeStyleData", EmitDefaultValue=false)]
+        public ShapeStyleData ShapeStyleData { get; set; }
+
+        /// <summary>
+        /// The style of the text in the shape
+        /// </summary>  
+		[DataMember(Name="TextStyleData", EmitDefaultValue=false)]
+        public TextStyleData TextStyleData { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -66,8 +108,15 @@ namespace Aspose.Diagram.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class ShapeData {\n");
           sb.Append("  ID: ").Append(this.ID).Append("\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
           sb.Append("  PinX: ").Append(this.PinX).Append("\n");
           sb.Append("  PinY: ").Append(this.PinY).Append("\n");
+          sb.Append("  Width: ").Append(this.Width).Append("\n");
+          sb.Append("  Height: ").Append(this.Height).Append("\n");
+          sb.Append("  Angle: ").Append(this.Angle).Append("\n");
+          sb.Append("  Text: ").Append(this.Text).Append("\n");
+          sb.Append("  ShapeStyleData: ").Append(this.ShapeStyleData).Append("\n");
+          sb.Append("  TextStyleData: ").Append(this.TextStyleData).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

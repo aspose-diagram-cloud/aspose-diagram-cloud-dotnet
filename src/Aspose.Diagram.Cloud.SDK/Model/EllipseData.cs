@@ -37,7 +37,7 @@ namespace Aspose.Diagram.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class EllipseData : DrawShapeData 
+  public class EllipseData : ShapeData 
   {                       
         /// <summary>
         /// Get the string presentation of the object

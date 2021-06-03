@@ -52,9 +52,9 @@ namespace Aspose.Diagram.Cloud.SDK.Model
         public string SavedFile { get; set; }
 
         /// <summary>
-        /// List of Additionals file names
+        /// Gets or sets Additionals
         /// </summary>  
-        [DataMember(Name = "Additionals", EmitDefaultValue = false)]
+		[DataMember(Name="Additionals", EmitDefaultValue=false)]
         public List<string> Additionals { get; set; }
 
         /// <summary>

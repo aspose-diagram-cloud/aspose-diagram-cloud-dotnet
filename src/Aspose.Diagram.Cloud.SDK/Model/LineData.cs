@@ -37,7 +37,7 @@ namespace Aspose.Diagram.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class LineData : DrawShapeData 
+  public class LineData : ShapeData 
   {                       
         /// <summary>
         /// Gets or sets Points

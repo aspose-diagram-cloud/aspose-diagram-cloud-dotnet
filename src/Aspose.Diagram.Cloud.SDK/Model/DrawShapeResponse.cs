@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="PolylineData.cs">
+// <copyright company="Aspose" file="DrawShapeResponse.cs">
 //   Copyright (c) 2016 Aspose.Diagram for Cloud
 // </copyright>
 // <summary>
@@ -37,13 +37,13 @@ namespace Aspose.Diagram.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class PolylineData : ShapeData 
+  public class DrawShapeResponse : ModifyResponse 
   {                       
         /// <summary>
-        /// Gets or sets Points
+        /// Shape Id
         /// </summary>  
-		[DataMember(Name="Points", EmitDefaultValue=false)]
-        public List<PointF> Points { get; set; }
+		[DataMember(Name="Shapes", EmitDefaultValue=false)]
+        public List<ShapeData> Shapes { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -52,8 +52,8 @@ namespace Aspose.Diagram.Cloud.SDK.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class PolylineData {\n");
-          sb.Append("  Points: ").Append(this.Points).Append("\n");
+          sb.Append("class DrawShapeResponse {\n");
+          sb.Append("  Shapes: ").Append(this.Shapes).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

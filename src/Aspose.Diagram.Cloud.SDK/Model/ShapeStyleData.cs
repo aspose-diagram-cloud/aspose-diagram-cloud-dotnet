@@ -40,10 +40,40 @@ namespace Aspose.Diagram.Cloud.SDK.Model
   public class ShapeStyleData 
   {                       
         /// <summary>
-        /// the background color of shape,like '#000000'
+        /// Specifies the color used for the background of the shape's fill pattern.like '#000000'             
         /// </summary>  
-		[DataMember(Name="BackGroundColor", EmitDefaultValue=false)]
-        public string BackGroundColor { get; set; }
+		[DataMember(Name="FillBackGroundColor", EmitDefaultValue=false)]
+        public string FillBackGroundColor { get; set; }
+
+        /// <summary>
+        /// Specifies the fill pattern for the shape.             
+        /// </summary>  
+		[DataMember(Name="FillPattern", EmitDefaultValue=false)]
+        public int? FillPattern { get; set; }
+
+        /// <summary>
+        /// Specifies the line color of the shape.
+        /// </summary>  
+		[DataMember(Name="LineColor", EmitDefaultValue=false)]
+        public string LineColor { get; set; }
+
+        /// <summary>
+        /// Specifies the line weight of a shape. Line weight is independent of the scale of the drawing. If the drawing is scaled, the line weight remains the same.             
+        /// </summary>  
+		[DataMember(Name="LineWeight", EmitDefaultValue=false)]
+        public double? LineWeight { get; set; }
+
+        /// <summary>
+        /// Specifies the line pattern of the shape
+        /// </summary>  
+		[DataMember(Name="LinePattern", EmitDefaultValue=false)]
+        public int? LinePattern { get; set; }
+
+        /// <summary>
+        /// Specifies the radius of the rounding arc applied where two contiguous segments of a path meet. For example, rounding can be used to give a rectangle rounded corners.
+        /// </summary>  
+		[DataMember(Name="Rounding", EmitDefaultValue=false)]
+        public double? Rounding { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -53,7 +83,12 @@ namespace Aspose.Diagram.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ShapeStyleData {\n");
-          sb.Append("  BackGroundColor: ").Append(this.BackGroundColor).Append("\n");
+          sb.Append("  FillBackGroundColor: ").Append(this.FillBackGroundColor).Append("\n");
+          sb.Append("  FillPattern: ").Append(this.FillPattern).Append("\n");
+          sb.Append("  LineColor: ").Append(this.LineColor).Append("\n");
+          sb.Append("  LineWeight: ").Append(this.LineWeight).Append("\n");
+          sb.Append("  LinePattern: ").Append(this.LinePattern).Append("\n");
+          sb.Append("  Rounding: ").Append(this.Rounding).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

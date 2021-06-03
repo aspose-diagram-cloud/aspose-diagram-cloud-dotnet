@@ -2678,5 +2678,1212 @@ namespace Aspose.Diagram.Cloud.SDK.Api
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
         }
+
+        /// <summary>
+        /// Add master shapes from an existing master file on cloud storage 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="masterPath">Existing master files on cloud storage.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>AddMasterResponse</returns>
+        public AddMasterResponse AddExistMaster(string name, string masterPath, string folder = null)
+        {
+            ApiResponse<AddMasterResponse> localVarResponse = AddExistMasterWithHttpInfo(name, masterPath, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Add master shapes from an existing master file on cloud storage 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="masterPath">Existing master files on cloud storage.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of AddMasterResponse</returns>
+        public ApiResponse<AddMasterResponse> AddExistMasterWithHttpInfo(string name, string masterPath, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling MasterApi->AddExistMaster");
+            // verify the required parameter 'masterPath' is set
+            if (masterPath == null)
+                throw new ApiException(400, "Missing required parameter 'masterPath' when calling MasterApi->AddExistMaster");
+
+            var localVarPath = "/diagram/{name}/masters";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (masterPath != null) localVarQueryParams.Add("masterPath", Configuration.ApiClient.ParameterToString(masterPath)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddExistMaster", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AddMasterResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AddMasterResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddMasterResponse)));
+        }
+
+        /// <summary>
+        /// Add master shapes from an existing master file on cloud storage 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="masterPath">Existing master files on cloud storage.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of AddMasterResponse</returns>
+        public async System.Threading.Tasks.Task<AddMasterResponse> AddExistMasterAsync(string name, string masterPath, string folder = null)
+        {
+            ApiResponse<AddMasterResponse> localVarResponse = await AddExistMasterAsyncWithHttpInfo(name, masterPath, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Add master shapes from an existing master file on cloud storage 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="masterPath">Existing master files on cloud storage.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (AddMasterResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddMasterResponse>> AddExistMasterAsyncWithHttpInfo(string name, string masterPath, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling MasterApi->AddExistMaster");
+            // verify the required parameter 'masterPath' is set
+            if (masterPath == null)
+                throw new ApiException(400, "Missing required parameter 'masterPath' when calling MasterApi->AddExistMaster");
+
+            var localVarPath = "/diagram/{name}/masters";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (masterPath != null) localVarQueryParams.Add("masterPath", Configuration.ApiClient.ParameterToString(masterPath)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddExistMaster", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AddMasterResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AddMasterResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddMasterResponse)));
+        }
+
+        /// <summary>
+        /// Add master shapes by uploading a visio file. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="file">Master File to upload</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>AddMasterResponse</returns>
+        public AddMasterResponse AddMaster(string name, System.IO.Stream file, string folder = null)
+        {
+            ApiResponse<AddMasterResponse> localVarResponse = AddMasterWithHttpInfo(name, file, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Add master shapes by uploading a visio file. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="file">Master File to upload</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of AddMasterResponse</returns>
+        public ApiResponse<AddMasterResponse> AddMasterWithHttpInfo(string name, System.IO.Stream file, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling MasterApi->AddMaster");
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling MasterApi->AddMaster");
+
+            var localVarPath = "/diagram/{name}/masters/upload";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (file != null) localVarFileParams.Add("File", Configuration.ApiClient.ParameterToFile("File", file));
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddMaster", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AddMasterResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AddMasterResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddMasterResponse)));
+        }
+
+        /// <summary>
+        /// Add master shapes by uploading a visio file. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="file">Master File to upload</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of AddMasterResponse</returns>
+        public async System.Threading.Tasks.Task<AddMasterResponse> AddMasterAsync(string name, System.IO.Stream file, string folder = null)
+        {
+            ApiResponse<AddMasterResponse> localVarResponse = await AddMasterAsyncWithHttpInfo(name, file, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Add master shapes by uploading a visio file. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name(Need to add master shapes).</param>
+        /// <param name="file">Master File to upload</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (AddMasterResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddMasterResponse>> AddMasterAsyncWithHttpInfo(string name, System.IO.Stream file, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling MasterApi->AddMaster");
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling MasterApi->AddMaster");
+
+            var localVarPath = "/diagram/{name}/masters/upload";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (file != null) localVarFileParams.Add("File", Configuration.ApiClient.ParameterToFile("File", file));
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddMaster", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AddMasterResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AddMasterResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddMasterResponse)));
+        }
+
+        /// <summary>
+        /// Get the existing master shapes in the document 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>List&lt;MasterData&gt;</returns>
+        public List<MasterData> GetMasters(string name, string folder = null)
+        {
+            ApiResponse<List<MasterData>> localVarResponse = GetMastersWithHttpInfo(name, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get the existing master shapes in the document 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of List&lt;MasterData&gt;</returns>
+        public ApiResponse<List<MasterData>> GetMastersWithHttpInfo(string name, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling MasterApi->GetMasters");
+
+            var localVarPath = "/diagram/{name}/masters";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetMasters", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<MasterData>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<MasterData>)Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<MasterData>)));
+        }
+
+        /// <summary>
+        /// Get the existing master shapes in the document 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of List&lt;MasterData&gt;</returns>
+        public async System.Threading.Tasks.Task<List<MasterData>> GetMastersAsync(string name, string folder = null)
+        {
+            ApiResponse<List<MasterData>> localVarResponse = await GetMastersAsyncWithHttpInfo(name, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get the existing master shapes in the document 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;MasterData&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<MasterData>>> GetMastersAsyncWithHttpInfo(string name, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling MasterApi->GetMasters");
+
+            var localVarPath = "/diagram/{name}/masters";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetMasters", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<MasterData>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<MasterData>)Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<MasterData>)));
+        }
+
+        /// <summary>
+        /// Add shapes on the page(If the current file does not have a master, you need to add the require Master of a Shape). 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapes">drawing shapes model.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>DrawShapeResponse</returns>
+        public DrawShapeResponse AddShapes(string name, string pageName, List<DrawShapeModel> shapes, string folder = null)
+        {
+            ApiResponse<DrawShapeResponse> localVarResponse = AddShapesWithHttpInfo(name, pageName, shapes, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Add shapes on the page(If the current file does not have a master, you need to add the require Master of a Shape). 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapes">drawing shapes model.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of DrawShapeResponse</returns>
+        public ApiResponse<DrawShapeResponse> AddShapesWithHttpInfo(string name, string pageName, List<DrawShapeModel> shapes, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->AddShapes");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->AddShapes");
+            // verify the required parameter 'shapes' is set
+            if (shapes == null)
+                throw new ApiException(400, "Missing required parameter 'shapes' when calling ShapeApi->AddShapes");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (shapes != null && shapes.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(shapes); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = shapes; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddShapes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DrawShapeResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DrawShapeResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(DrawShapeResponse)));
+        }
+
+        /// <summary>
+        /// Add shapes on the page(If the current file does not have a master, you need to add the require Master of a Shape). 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapes">drawing shapes model.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of DrawShapeResponse</returns>
+        public async System.Threading.Tasks.Task<DrawShapeResponse> AddShapesAsync(string name, string pageName, List<DrawShapeModel> shapes, string folder = null)
+        {
+            ApiResponse<DrawShapeResponse> localVarResponse = await AddShapesAsyncWithHttpInfo(name, pageName, shapes, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Add shapes on the page(If the current file does not have a master, you need to add the require Master of a Shape). 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapes">drawing shapes model.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (DrawShapeResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DrawShapeResponse>> AddShapesAsyncWithHttpInfo(string name, string pageName, List<DrawShapeModel> shapes, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->AddShapes");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->AddShapes");
+            // verify the required parameter 'shapes' is set
+            if (shapes == null)
+                throw new ApiException(400, "Missing required parameter 'shapes' when calling ShapeApi->AddShapes");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (shapes != null && shapes.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(shapes); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = shapes; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddShapes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DrawShapeResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DrawShapeResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(DrawShapeResponse)));
+        }
+
+        /// <summary>
+        /// Delete shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapeId">shape id</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse DeleteShapes(string name, string pageName, long? shapeId, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = DeleteShapesWithHttpInfo(name, pageName, shapeId, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Delete shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapeId">shape id</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> DeleteShapesWithHttpInfo(string name, string pageName, long? shapeId, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->DeleteShapes");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->DeleteShapes");
+            // verify the required parameter 'shapeId' is set
+            if (shapeId == null)
+                throw new ApiException(400, "Missing required parameter 'shapeId' when calling ShapeApi->DeleteShapes");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes/{shapeId}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (shapeId != null) localVarPathParams.Add("shapeId", Configuration.ApiClient.ParameterToString(shapeId)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteShapes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// Delete shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapeId">shape id</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> DeleteShapesAsync(string name, string pageName, long? shapeId, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await DeleteShapesAsyncWithHttpInfo(name, pageName, shapeId, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Delete shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shapeId">shape id</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> DeleteShapesAsyncWithHttpInfo(string name, string pageName, long? shapeId, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->DeleteShapes");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->DeleteShapes");
+            // verify the required parameter 'shapeId' is set
+            if (shapeId == null)
+                throw new ApiException(400, "Missing required parameter 'shapeId' when calling ShapeApi->DeleteShapes");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes/{shapeId}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (shapeId != null) localVarPathParams.Add("shapeId", Configuration.ApiClient.ParameterToString(shapeId)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteShapes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// Get shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>List&lt;ShapeData&gt;</returns>
+        public List<ShapeData> GetShapes(string name, string pageName, string folder = null)
+        {
+            ApiResponse<List<ShapeData>> localVarResponse = GetShapesWithHttpInfo(name, pageName, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of List&lt;ShapeData&gt;</returns>
+        public ApiResponse<List<ShapeData>> GetShapesWithHttpInfo(string name, string pageName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->GetShapes");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->GetShapes");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetShapes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<ShapeData>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ShapeData>)Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ShapeData>)));
+        }
+
+        /// <summary>
+        /// Get shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of List&lt;ShapeData&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ShapeData>> GetShapesAsync(string name, string pageName, string folder = null)
+        {
+            ApiResponse<List<ShapeData>> localVarResponse = await GetShapesAsyncWithHttpInfo(name, pageName, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get shapes on the page 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;ShapeData&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<ShapeData>>> GetShapesAsyncWithHttpInfo(string name, string pageName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->GetShapes");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->GetShapes");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetShapes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<ShapeData>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ShapeData>)Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ShapeData>)));
+        }
+
+        /// <summary>
+        /// Update shape on the page by shape id. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shape">Shape data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ModifyResponse</returns>
+        public ModifyResponse UpdateShape(string name, string pageName, ShapeData shape, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = UpdateShapeWithHttpInfo(name, pageName, shape, folder);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update shape on the page by shape id. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shape">Shape data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>ApiResponse of ModifyResponse</returns>
+        public ApiResponse<ModifyResponse> UpdateShapeWithHttpInfo(string name, string pageName, ShapeData shape, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->UpdateShape");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->UpdateShape");
+            // verify the required parameter 'shape' is set
+            if (shape == null)
+                throw new ApiException(400, "Missing required parameter 'shape' when calling ShapeApi->UpdateShape");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (shape != null && shape.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(shape); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = shape; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdateShape", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
+
+        /// <summary>
+        /// Update shape on the page by shape id. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shape">Shape data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ModifyResponse</returns>
+        public async System.Threading.Tasks.Task<ModifyResponse> UpdateShapeAsync(string name, string pageName, ShapeData shape, string folder = null)
+        {
+            ApiResponse<ModifyResponse> localVarResponse = await UpdateShapeAsyncWithHttpInfo(name, pageName, shape, folder);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update shape on the page by shape id. 
+        /// </summary>
+        /// <exception cref="Aspose.Diagram.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="pageName">Page name.</param>
+        /// <param name="shape">Shape data.</param>
+        /// <param name="folder">Document folder. (optional)</param>
+        /// <returns>Task of ApiResponse (ModifyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ModifyResponse>> UpdateShapeAsyncWithHttpInfo(string name, string pageName, ShapeData shape, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling ShapeApi->UpdateShape");
+            // verify the required parameter 'pageName' is set
+            if (pageName == null)
+                throw new ApiException(400, "Missing required parameter 'pageName' when calling ShapeApi->UpdateShape");
+            // verify the required parameter 'shape' is set
+            if (shape == null)
+                throw new ApiException(400, "Missing required parameter 'shape' when calling ShapeApi->UpdateShape");
+
+            var localVarPath = "/diagram/{name}/pages/{pageName}/shapes";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (pageName != null) localVarPathParams.Add("pageName", Configuration.ApiClient.ParameterToString(pageName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (shape != null && shape.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(shape); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = shape; // byte array
+            }
+
+            // authentication (JWT) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdateShape", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ModifyResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ModifyResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModifyResponse)));
+        }
     }
 }

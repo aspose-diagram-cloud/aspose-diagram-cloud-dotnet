@@ -56,7 +56,7 @@ namespace Aspose.Diagram.Cloud.SDK.Test
             request.Points = new List<PointF>{ new PointF(0, 0), new PointF(0, 1) };
             request.Text = "test draw line";
             var shapeStyleData = new ShapeStyleData();
-            shapeStyleData.BackGroundColor = "#FF0000";
+            shapeStyleData.FillBackGroundColor = "#FF0000";
             var textStyleData = new TextStyleData();
             textStyleData.FontSize = 0.25;
             textStyleData.FontName = "Times New Roman";
@@ -78,7 +78,7 @@ namespace Aspose.Diagram.Cloud.SDK.Test
             request.Height = 1;
             request.Text = "test draw ellipse";
             var shapeStyleData = new ShapeStyleData();
-            shapeStyleData.BackGroundColor = "#FF0000";
+            shapeStyleData.FillBackGroundColor = "#FF0000";
             var textStyleData = new TextStyleData();
             textStyleData.FontSize = 0.25;
             textStyleData.FontName = "Times New Roman";
@@ -103,7 +103,7 @@ namespace Aspose.Diagram.Cloud.SDK.Test
             request.Points = new List<PointF>{ new PointF(0, 0), new PointF(0, 1), new PointF(1, 1), new PointF(1, 0) };
             request.Text = "test draw polyline";
             var shapeStyleData = new ShapeStyleData();
-            shapeStyleData.BackGroundColor = "#FF0000";
+            shapeStyleData.FillBackGroundColor = "#FF0000";
             var textStyleData = new TextStyleData();
             textStyleData.FontSize = 0.25;
             textStyleData.FontName = "Times New Roman";
